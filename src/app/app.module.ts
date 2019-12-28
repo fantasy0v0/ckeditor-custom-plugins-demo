@@ -6,11 +6,10 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
-import { HighlightModule } from 'ngx-highlightjs';
 import 'ckeditor/translations/zh-cn';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, CKEditorModule, HighlightModule ],
+  imports:      [ BrowserModule, FormsModule, CKEditorModule ],
   declarations: [ AppComponent, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })

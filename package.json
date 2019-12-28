@@ -12,7 +12,6 @@
     "@angular/router": "^8.0.0",
     "@ckeditor/ckeditor5-angular": "~1.1.2",
     "core-js": "2",
-    "ngx-highlightjs": "^4.0.0",
     "rxjs": "^6.5.2",
     "zone.js": "^0.9.1"
   },

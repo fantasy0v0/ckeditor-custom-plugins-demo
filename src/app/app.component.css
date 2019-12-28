@@ -1,3 +1,12 @@
 p {
   font-family: Lato;
 }
+
+:host ::ng-deep .test {
+    display: block;
+    margin-top: 1em;
+}
+
+:host ::ng-deep .test .ck-editor__top {
+    display: none;
+}
