@@ -1,0 +1,9 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<button (click)="test()">切换可读</button>
+<ckeditor #editor [editor]="Editor" [config]="config" [data]="html"
+  (change)="change($event)"></ckeditor>
+
+<ckeditor #editor1 [editor]="Editor" [disabled]="true" [data]="html"></ckeditor>
