@@ -1,8 +1,7 @@
 import { Component, ViewChild, OnInit, Pipe } from '@angular/core';
 import * as ClassicEditor from 'ckeditor/ckeditor';
 import { CKEditorComponent } from '@ckeditor/ckeditor5-angular';
-
-declare var hljs: any;
+import { MyCustomUploadAdapterPlugin } from './MyUploadAdapter';
 
 @Component({
   selector: 'my-app',
@@ -19,6 +18,7 @@ export class AppComponent implements OnInit {
 
   config = {
     language: 'zh-cn',
+    extraPlugins: [ MyCustomUploadAdapterPlugin ]
   };
 
   @ViewChild('editor', {
@@ -44,9 +44,5 @@ export class AppComponent implements OnInit {
 
   test() {
     this.editorComponent.disabled = !this.editorComponent.disabled;
-  }
-
-  ngAfterViewInit() {
-    hljs.initHighlightingOnLoad();
   }
 }
